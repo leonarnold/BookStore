@@ -23,7 +23,7 @@ public class RegisterUser extends HttpServlet{
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         loginService.saveLogin(new User(username, password));
-        resp.sendRedirect("/einloggen.do");
+        resp.sendRedirect("einloggen.do");
     }
 
 }

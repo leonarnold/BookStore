@@ -14,13 +14,13 @@
 <h1>Login-Page</h1>
 
 <h2>${error}</h2>
-<form action="/einloggen.do" method="post">
+<form action="einloggen" method="post">
     Loginname: <input type="text" name="loginname">
     Passwort: <input type="password" name="password">
     <input type="submit" value="Einloggen"/>
 </form>
 
-<a href="/registrieren"> Registrieren </a>
+<a href="registrieren"> Registrieren </a>
 
 </body>
 </html>
