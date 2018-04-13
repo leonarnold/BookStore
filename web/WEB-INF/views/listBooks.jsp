@@ -26,5 +26,7 @@ Ihre Bücher sind:
     </c:forEach>
 </table>
 
+<a href="addBooks.do">Neu</a>
+
 </body>
 </html>
