@@ -45,6 +45,16 @@ public class BookService {
         }
     }
 
+    public Book findBook(int id) {
+        return entityManager.find(Book.class, id);
+    }
+
+    public void deleteBook(int id) {
+        entityManager.getTransaction().begin();
+        entityManager.remove(findBook(id));
+        entityManager.getTransaction().commit();
+    }
+
     public List<String> readAllAuthors(){
         TypedQuery<String> query = entityManager.createQuery("SELECT DISTINCT b.autor from Book b", String.class);
         return query.getResultList();

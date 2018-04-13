@@ -21,6 +21,7 @@ Ihre Bücher sind:
             <td>${book.isbn}</td>
             <td>${book.titel}</td>
             <td>${book.autor}</td>
+            <td><a href="deleteBooks.do?id=${book.id}">Löschen</a></td>
         </tr>
     </c:forEach>
 </table>

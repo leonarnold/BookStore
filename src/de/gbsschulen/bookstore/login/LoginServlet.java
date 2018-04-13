@@ -20,8 +20,6 @@ public class LoginServlet extends HttpServlet{
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String loginname = req.getParameter("loginname");
         String password = req.getParameter("password");
-        System.out.println(loginname);
-        System.out.println(password);
         if (loginService.checkPassword(loginname, password)) {
             //req.setAttribute("loginname", loginname);
             //System.out.println("Test");
