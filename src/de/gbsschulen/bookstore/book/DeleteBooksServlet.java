@@ -14,7 +14,7 @@ public class DeleteBooksServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println(req.getParameter("id"));
+//        System.out.println(req.getParameter("id"));
         String id = req.getParameter("id");
         bookService.deleteBook(Integer.parseInt(id));
         resp.sendRedirect("/listBooks.do");
