@@ -12,12 +12,16 @@
 
 </head>
 <body>
-<form method="post" action="registrieren">
-    Benutzername:<input type="text" name="username">
-    Passwort:<input type="password" name="password">
+<form method="post" action="registrieren" class="form-inline">
+    Benutzername:<input type="text" name="username" class="form-control">
+    Passwort:<input type="password" name="password" class="form-control">
 
-    <input type="submit" value="Registrieren">
+    <input type="submit" value="Registrieren" class="btn btn-success">
 </form>
+
+<script src="webjars/jquery/3.3.1/jquery.min.js" ></script>
+<script src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+<link href="webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet">
 
 </body>
 </html>

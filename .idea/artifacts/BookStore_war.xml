@@ -6,6 +6,8 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="lib">
           <element id="library" level="project" name="jstl:jstl:1.2" />
+          <element id="library" level="project" name="org.webjars:bootstrap:3.3.7-1" />
+          <element id="library" level="project" name="org.webjars:jquery:3.3.1" />
         </element>
       </element>
     </root>

@@ -8,19 +8,24 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Login</title>
+    <link href="webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet">
+    <title class="modal-title">Login</title>
 </head>
 <body>
 <h1>Login-Page</h1>
 
 <h2>${error}</h2>
-<form action="einloggen" method="post">
-    Loginname: <input type="text" name="loginname">
-    Passwort: <input type="password" name="password">
-    <input type="submit" value="Einloggen"/>
+<form action="einloggen" method="post" class="form-inline">
+    Loginname: <input type="text" name="loginname" placeholder="Name" class="form-control">
+    Passwort: <input type="password" name="password" placeholder="Passwort" class="form-control">
+    <input type="submit" value="Einloggen" class="btn-success"/>
 </form>
 
-<a href="registrieren"> Registrieren </a>
+<a href="registrieren" class="btn btn-success"> Registrieren </a>
+
+<script src="webjars/jquery/3.3.1/jquery.min.js" ></script>
+<script src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
